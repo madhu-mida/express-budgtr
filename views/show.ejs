@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/normalize.css" />
+    <link rel="stylesheet" href="/skeleton.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <%= eachBudget.name %>
+        </h1>
+        <a class="button" href="/budgets">Back</a>
+        <h6><strong>date</strong></h6>
+        <h6 style="text-indent: 40px">
+            <%= eachBudget.date %>
+        </h6>
+        <h6><strong>name</strong></h6>
+        <h6 style="text-indent: 40px">
+            <%= eachBudget.name %>
+        </h6>
+        <h6><strong>from</strong></h6>
+        <h6 style="text-indent: 40px">
+            <%= eachBudget.from %>
+        </h6>
+        <h6><strong>amount</strong></h6>
+        <h6 style="text-indent: 40px">
+            <%= eachBudget.amount %>
+        </h6>
+        <h6><strong>tags</strong></h6>
+        <h6 style="text-indent: 40px">
+            <%= eachBudget.tags %>
+        </h6>
+    </div>
+</body>
+
+</html>
