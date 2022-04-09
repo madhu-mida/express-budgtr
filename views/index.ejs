@@ -10,10 +10,25 @@
     <link rel="stylesheet" href="/skeleton.css" />
 
 </head>
+<style>
+    .red {
+        background-color: red;
+    }
+
+    .green {
+        background-color: green;
+    }
+
+    .default {
+        background-color: bisque;
+    }
+</style>
 
 <body>
     <div class="container">
         <h1>Budgtr</h1>
+        <h3 class="<%= className %>">Bank Account: <%= totalAccountbalance %>
+        </h3>
         <table class="budget-table">
             <tbody>
                 <% allBudget.forEach(function(element,index) { %>
